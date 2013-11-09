@@ -1,7 +1,7 @@
 {
 	"name": "nodecache",
 	"description": "Simple and powerful Cache Module for NodeJS.",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"author": "Mariano Pardo (Codexar) <marianomdq1@gmail.com>",
 	"dependencies": {
 		"redis": "latest"

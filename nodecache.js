@@ -1,6 +1,6 @@
 var redis = require('redis');
 
-var client = redis.createClient();
+var client;
 var database = {};
 
 var nodecache = {
@@ -26,6 +26,9 @@ var nodecache = {
 	 * @param dataFunc
 	 */
 	persist: function (key, dataFunc, cb) {
+		if (!client) {
+			client = redis.createClient();
+		}
 		if (!database[key]) {
 			client.get(key, function (err, reply) {
 				if (err) {
