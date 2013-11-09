@@ -1,0 +1,31 @@
+{
+	"name": "nodecache",
+	"description": "Simple and powerful Cache Module for NodeJS.",
+	"version": "0.0.1",
+	"author": "Mariano Pardo (Codexar) <marianomdq1@gmail.com>",
+	"dependencies": {
+		"redis": "latest"
+	},
+	"devDependencies": {
+		"mocha": ">= 1.13 < 2",
+		"expect.js": "latest"
+	},
+	"scripts": {
+		"prepublish": "npm prune",
+		"test": "mocha ./tests/nodecacheTest.js"
+	},
+	"keywords": [
+		"cache",
+		"data",
+		"database",
+		"db",
+		"redis",
+		"utils",
+		"tools"
+	],
+	"main": "nodecache",
+	"repository": "git://github.com/codexar/npm-nodecache",
+	"engines": {
+		"node": ">= 0.8.0"
+	}
+}
