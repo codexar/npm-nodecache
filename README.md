@@ -43,3 +43,4 @@ In the code above, data will be searched first in local memory, if not found the
 * cache.persist(key, dataFunc, cb)
 * cache.get(key)
 * cache.set(key, value)
+* cache.del(key)

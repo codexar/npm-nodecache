@@ -65,6 +65,16 @@ var nodecache = {
 	 */
 	set: function (key, value) {
 		database[key] = value;
+	},
+	/**
+	 * Delete value in memory
+	 *
+	 * @param key
+	 */
+	del: function (key) {
+		if(database[key]){
+			delete database[key];
+		}
 	}
 };
 
